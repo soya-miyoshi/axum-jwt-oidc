@@ -6,7 +6,7 @@ authors = ["Soya Miyoshi"]
 description = "Axum middleware for OIDC JWT token validation and claims extraction"
 repository = "https://github.com/soya-miyoshi/axum-jwt-oidc"
 license = "MIT OR Apache-2.0"
-keywords = ["axum", "tower", "jwt", "oidc", "auth", "middleware"]
+keywords = ["axum", "jwt", "oidc", "auth", "middleware"]
 categories = ["authentication", "web-programming::http-server"]
 readme = "README.md"
 

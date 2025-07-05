@@ -14,15 +14,6 @@ Axum middleware for OIDC JWT token validation and claims extraction. This middle
 - Token validation using OIDC provider discovery
 - Claims are injected into request extensions for easy access
 
-## Installation
-
-Add this to your `Cargo.toml`:
-
-```toml
-[dependencies]
-axum-jwt-oidc = "0.1"
-```
-
 ## Usage
 
 ```rust
@@ -47,18 +38,18 @@ async fn main() {
         "https://your-oidc-provider.com/.well-known/jwks.json".to_string(),
     );
     let oidc_validator = OidcValidator::new(config);
-    
+
     // Configure validation rules
     let validation = Validation::default();
-    
+
     // Create the authentication layer
     let auth_layer = OidcAuthLayer::<CustomClaims>::new(oidc_validator, validation);
-    
+
     // Build your router with the middleware
     let app = Router::new()
         .route("/protected", get(protected_handler))
         .layer(auth_layer);
-    
+
     // Run your server
     let listener = tokio::net::TcpListener::bind("0.0.0.0:3000")
         .await
@@ -85,16 +76,18 @@ async fn protected_handler(
 
 If validation fails, the request continues without claims in the extensions. You can implement your own authorization logic based on the presence or absence of claims.
 
+## Installation
+
+Add this to your `Cargo.toml`:
+
+```toml
+[dependencies]
+axum-jwt-oidc = "0.1"
+```
+
 ## License
 
-Licensed under either of
-
- * Apache License, Version 2.0
-   ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
- * MIT license
-   ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
-
-at your option.
+Licensed under * MIT license [LICENSE-MIT](LICENSE-MIT) 
 
 ## Contribution
 

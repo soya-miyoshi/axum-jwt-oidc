@@ -18,8 +18,7 @@ Axum middleware for OIDC JWT token validation and claims extraction. This middle
 
 ```rust
 use axum::{Router, routing::get, Extension};
-use axum_jwt_oidc::OidcAuthLayer;
-use async_oidc_jwt_validator::{OidcConfig, OidcValidator, Validation};
+use axum_jwt_oidc::{OidcAuthLayer, OidcConfig, OidcValidator, Validation};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Deserialize, Serialize)]

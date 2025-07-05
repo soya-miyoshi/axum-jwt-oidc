@@ -12,8 +12,7 @@
 //!
 //! ```rust,no_run
 //! use axum::{Router, routing::get, Extension};
-//! use axum_jwt_oidc::OidcAuthLayer;
-//! use async_oidc_jwt_validator::{OidcConfig, OidcValidator, Validation};
+//! use axum_jwt_oidc::{OidcAuthLayer, OidcConfig, OidcValidator, Validation};
 //! use serde::{Deserialize, Serialize};
 //!
 //! #[derive(Debug, Clone, Deserialize, Serialize)]
@@ -85,3 +84,6 @@ mod middleware;
 
 // Re-export the public API
 pub use layer::OidcAuthLayer;
+
+// Re-export commonly used types from async-oidc-jwt-validator
+pub use async_oidc_jwt_validator::{OidcConfig, OidcValidator, Validation};

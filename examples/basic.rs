@@ -1,6 +1,5 @@
-use async_oidc_jwt_validator::{OidcConfig, OidcValidator, Validation};
 use axum::{routing::get, Extension, Router};
-use axum_jwt_oidc::OidcAuthLayer;
+use axum_jwt_oidc::{OidcAuthLayer, OidcConfig, OidcValidator, Validation};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Deserialize, Serialize)]

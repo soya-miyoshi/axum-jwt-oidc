@@ -68,15 +68,6 @@
 //! 5. Continues to the next handler if validation succeeds
 //!
 //! If validation fails, the request continues without claims in the extensions. You can implement your own authorization logic based on the presence or absence of claims.
-//!
-//! # Installation
-//!
-//! Add this to your `Cargo.toml`:
-//!
-//! ```toml
-//! [dependencies]
-//! axum-jwt-oidc = "0.1"
-//! ```
 
 mod auth;
 mod layer;

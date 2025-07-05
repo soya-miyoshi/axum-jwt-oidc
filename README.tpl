@@ -6,6 +6,15 @@
 
 {{readme}}
 
+## Installation
+
+Add this to your `Cargo.toml`:
+
+```toml
+[dependencies]
+{{crate}} = "{{version}}"
+```
+
 ## License
 
 Licensed under * MIT license [LICENSE-MIT](LICENSE-MIT) 

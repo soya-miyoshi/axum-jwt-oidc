@@ -1,11 +1,11 @@
 [package]
 name = "axum-jwt-oidc"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
-authors = ["Soya Miyoshi"]
+authors = ["soya-miyoshi"]
 description = "Axum middleware for OIDC JWT token validation and claims extraction"
 repository = "https://github.com/soya-miyoshi/axum-jwt-oidc"
-license = "MIT OR Apache-2.0"
+license = "MIT"
 keywords = ["axum", "jwt", "oidc", "auth", "middleware"]
 categories = ["authentication", "web-programming::http-server"]
 readme = "README.md"

@@ -99,7 +99,7 @@ dependencies = [
 
 [[package]]
 name = "axum-jwt-oidc"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "async-oidc-jwt-validator",
  "axum",

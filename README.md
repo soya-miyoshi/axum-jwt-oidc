@@ -81,7 +81,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-axum-jwt-oidc = "0.1.0"
+axum-jwt-oidc = "0.1.1"
 ```
 
 ## License
